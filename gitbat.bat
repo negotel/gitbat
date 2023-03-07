@@ -4,7 +4,8 @@ cls
 echo.
 echo UNIFICANDO COMANDOS GIT:
 echo.
-
+Set > set
+echo %tipo%
 IF EXIST ".git" (
     set /p tipo=Digite sua mensagem de commit aqui: 
     
