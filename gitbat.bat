@@ -4,7 +4,6 @@ cls
 echo.
 echo UNIFICANDO COMANDOS GIT:
 echo.
-Set > set
 echo %tipo%
 IF EXIST ".git" (
     set /p tipo=Digite sua mensagem de commit aqui: 
@@ -15,7 +14,7 @@ IF EXIST ".git" (
     echo.
     echo Messagem de commit.
     echo.   
-    git commit -m "%mCommit%"
+    git commit -m "%tipo%"
     
     echo.
     echo Setando a Branch.
