@@ -1,2 +1,1 @@
-Git unificando comandos com .bat"#gitbat" 
-"#gitbat" 
+Git unificando comandos com .bat
