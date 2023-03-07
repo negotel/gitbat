@@ -7,7 +7,24 @@ echo.
 
 IF EXIST ".git" (
     set /p tipo=Digite sua mensagem de commit aqui: 
-    echo %tipo%
+    
+    echo.
+    git add .
+    
+    echo.
+    echo Messagem de commit.
+    echo.   
+    git commit -m "%mCommit%"
+    
+    echo.
+    echo Setando a Branch.
+    echo.   
+    git branch -M main
+
+    echo.
+    echo Enviando o projeto atualizado para seu [github.com]
+    echo.   
+    git push -u origin main
 ) ELSE (
     
     echo inicializando o comando [git init]
